@@ -4,6 +4,7 @@ PlayAgain.addEventListener("click", () => {
     window.location.href = "./index.html";
 });
 
+
 // Game Execution
 document.addEventListener('DOMContentLoaded', () => {
     const PlayerMove = document.getElementById("PlayerMove");
