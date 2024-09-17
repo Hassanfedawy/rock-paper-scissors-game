@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --purple: hsl(228, 45%, 44%);
+  --Scissors_Gradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%);
+  --Paper_Gradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%);
+  --Rock_Gradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%);
+  --Radial_Gradient: hsl(214, 47%, 23%) to hsl(237, 49%, 15%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vh;
+  color: white;
+  background-image: radial-gradient(
+    circle,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+header {
+  padding: 1rem;
+  width: 50vw;
+  border: 3px solid hsla(0, 0%, 100%, 0.705);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.score {
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.score h1,
+.score h2 {
+  padding-inline: 20px;
+}
+
+.score h2 {
+  font-weight: 400;
+  color: var(--purple);
+}
+
+.score h1 {
+  font-size: 50px;
+}
+
+.button img {
+  width: 70%;
+  height: auto;
+}
+
+.button {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  background-color: white; /* Adjust color as needed */
+  border: none;
+  border-radius: 50%;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: bold;
+  color: black;
+  transition: transform 1s ease; /* Add transition for scaling */
+}
+
+.button-1 {
+  top: 320px; /* Center the button vertically */
+  left: 73.5%; /* Move to the middle of the container */
+  transform: translateX(-50%); /* Center horizontally */
+  
+}
+
+.button-2{
+    bottom: 135px; /* Adjust as needed to position correctly */
+    left: 310px; /* Left vertex */
+    transform: translateX(-50%);
+}
+
+
+.rock {
+ 
+  border: 10px solid hsl(349, 71%, 52%);;
+}
+
+.paper{
+
+    border: 10px solid hsl(230, 89%, 62%);
+   
+}
+
+.scissors{
+    border: 10px solid hsl(39, 89%, 49%); 
+}
+
+.Pick-text {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.selected-buttons {
+  display: flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100vw;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 15vh;
+  align-items: center;
+}
+
+.result button {
+  padding: 10px 70px;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.result button:hover {
+  background-color: hsl(0, 0%, 85%);
+  border: 1px solid black;
+}
+

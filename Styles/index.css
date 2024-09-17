@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+     --purple: hsl(228, 45%, 44%); 
+     --Scissors_Gradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%);
+     --Paper_Gradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%);
+     --Rock_Gradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%);
+     --Radial_Gradient: hsl(214, 47%, 23%) to hsl(237, 49%, 15%);
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+    min-width: 100vh;
+    color: white;
+    background-image: radial-gradient(circle,hsl(214, 47%, 23%),hsl(237, 49%, 15%));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+header{
+  padding: 1rem;
+  width:50vw;
+  border: 3px solid hsla(0, 0%, 100%, 0.705);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:5rem;
+}
+
+.score{
+    color:black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+.score h1, .score h2{
+    padding-inline: 20px;
+}
+
+.score h2{
+    font-weight: 400;
+    color:var(--purple)
+}
+
+.score h1{
+    font-size: 50px;
+}
+
+.triangle-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.triangle-container img {
+    width: 100%;
+    height: auto;
+}
+
+.button img{
+    width: 70%;
+    height: auto; 
+}
+
+.button {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white; /* Adjust color as needed */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: bold;
+    color: black;
+    transition: transform 1s ease; /* Add transition for scaling */
+}
+
+.button:hover {
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+.button-1 {
+    top: 200px; /* Center the button vertically */
+    left: 50%; /* Move to the middle of the container */
+    transform: translateX(-50%); /* Center horizontally */
+    border: 10px solid hsl(349, 71%, 52%);
+}
+
+.button-2 {
+    bottom: 250px; /* Adjust as needed to position correctly */
+    left: 20px; /* Left vertex */
+    transform: translateX(-50%);
+    border: 10px solid hsl(230, 89%, 62%);
+
+}
+
+.button-3 {
+    bottom: 250px; /* Adjust as needed to position correctly */
+    right: 20px; /* Right vertex */
+    transform: translateX(50%);
+    border: 10px solid hsl(39, 89%, 49%) ;
+
+}
+
+
