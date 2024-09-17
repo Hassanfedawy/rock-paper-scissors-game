@@ -14,33 +14,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // chooses ROCK
     if (localStorage.getItem("PlayerChoice") === "rock") {
-        PlayerMove.innerHTML = `<img src="../images/icon-rock.svg" alt="Rock">`;
+        PlayerMove.innerHTML = `<img src="/images/icon-rock.svg" alt="Rock">`;
         PlayerMove.classList.add("rock")
     }
     // chooses PAPER
     else if (localStorage.getItem("PlayerChoice") === "paper") {
-        PlayerMove.innerHTML = `<img src="../images/icon-paper.svg" alt="Paper">`;
+        PlayerMove.innerHTML = `<img src="/images/icon-paper.svg" alt="Paper">`;
         PlayerMove.classList.add("paper");
     }
     // chooses SCISSORS
     else {
-        PlayerMove.innerHTML = `<img src="../images/icon-scissors.svg" alt="Scissors">`;
+        PlayerMove.innerHTML = `<img src="/images/icon-scissors.svg" alt="Scissors">`;
         PlayerMove.classList.add("scissors");
     }
 
     // Computer chooses Rock
     if (CompMove === 1) {
-        CompPlay.innerHTML = `<img src="../images/icon-rock.svg" alt="Rock">`;
+        CompPlay.innerHTML = `<img src="/images/icon-rock.svg" alt="Rock">`;
         CompPlay.classList.add("rock")
     }
     // Computer chooses Paper
     else if (CompMove === 2) {
-        CompPlay.innerHTML = `<img src="../images/icon-paper.svg" alt="Paper">`;
+        CompPlay.innerHTML = `<img src="/images/icon-paper.svg" alt="Paper">`;
         CompPlay.classList.add("paper");
     }
     // Computer chooses Scissors
     else {
-        CompPlay.innerHTML = `<img src="../images/icon-scissors.svg" alt="Scissors">`;
+        CompPlay.innerHTML = `<img src="/images/icon-scissors.svg" alt="Scissors">`;
         CompPlay.classList.add("scissors");
     }
 
